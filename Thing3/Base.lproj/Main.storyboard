@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -16,12 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="qLG-Et-Dek">
-                                <rect key="frame" x="269" y="276" width="37" height="37"/>
-                            </activityIndicatorView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="r4l-FE-aXY">
-                                <rect key="frame" x="296" y="276" width="37" height="37"/>
-                            </activityIndicatorView>
                             <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLX-iK-wgg">
                                 <rect key="frame" x="279" y="98" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -34,21 +28,26 @@
                                     <action selector="deltaChanged:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Tag-EQ-XEu"/>
                                 </connections>
                             </stepper>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWw-o5-acv" customClass="InfinityView" customModule="Thing3" customModuleProvider="target">
+                                <rect key="frame" x="268" y="281" width="64" height="37"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="64" id="7Dq-Hh-2uC"/>
+                                    <constraint firstAttribute="height" constant="37" id="zPA-dm-jLt"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                         <constraints>
-                            <constraint firstItem="aLX-iK-wgg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="78" id="5aI-NS-jga"/>
-                            <constraint firstAttribute="centerY" secondItem="qLG-Et-Dek" secondAttribute="centerY" constant="5.5" id="Fgb-9V-1Sn"/>
-                            <constraint firstAttribute="centerY" secondItem="r4l-FE-aXY" secondAttribute="centerY" constant="5.5" id="QWx-AP-SUz"/>
-                            <constraint firstAttribute="centerX" secondItem="qLG-Et-Dek" secondAttribute="centerX" constant="12.5" id="WCc-cu-KKE"/>
+                            <constraint firstAttribute="centerY" secondItem="cWw-o5-acv" secondAttribute="centerY" constant="0.5" id="M5x-pK-NiK"/>
                             <constraint firstAttribute="centerX" secondItem="aLX-iK-wgg" secondAttribute="centerX" id="Z9S-Ot-dJN"/>
-                            <constraint firstAttribute="centerX" secondItem="r4l-FE-aXY" secondAttribute="centerX" constant="-14.5" id="fwN-yh-cSM"/>
+                            <constraint firstItem="aLX-iK-wgg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="78" id="aSf-AJ-iJJ"/>
+                            <constraint firstAttribute="centerX" secondItem="cWw-o5-acv" secondAttribute="centerX" id="lGi-bO-1DL"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="activityIndicatorLeft" destination="qLG-Et-Dek" id="rtY-G7-QbP"/>
-                        <outlet property="activityIndicatorRight" destination="r4l-FE-aXY" id="PjE-ev-r2T"/>
                         <outlet property="deltaLabel" destination="aLX-iK-wgg" id="kRN-aY-lXS"/>
+                        <outlet property="infinityView" destination="cWw-o5-acv" id="Ppo-cQ-ibX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>

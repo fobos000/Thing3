@@ -13,6 +13,8 @@
 		3F12C48B1B05E87000B01915 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F12C48A1B05E87000B01915 /* Images.xcassets */; };
 		3F12C48E1B05E87000B01915 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F12C48C1B05E87000B01915 /* LaunchScreen.xib */; };
 		3F12C49A1B05E87000B01915 /* Thing3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F12C4991B05E87000B01915 /* Thing3Tests.swift */; };
+		3F54F5481B15D910000A48E1 /* InfinityView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3F54F5471B15D910000A48E1 /* InfinityView.xib */; };
+		3F54F54A1B15DA83000A48E1 /* InfinityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F54F5491B15DA83000A48E1 /* InfinityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		3F12C4931B05E87000B01915 /* Thing3Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Thing3Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F12C4981B05E87000B01915 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3F12C4991B05E87000B01915 /* Thing3Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Thing3Tests.swift; sourceTree = "<group>"; };
+		3F54F5471B15D910000A48E1 /* InfinityView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfinityView.xib; sourceTree = "<group>"; };
+		3F54F5491B15DA83000A48E1 /* InfinityView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfinityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 				3F12C48A1B05E87000B01915 /* Images.xcassets */,
 				3F12C48C1B05E87000B01915 /* LaunchScreen.xib */,
 				3F12C4811B05E87000B01915 /* Supporting Files */,
+				3F54F5471B15D910000A48E1 /* InfinityView.xib */,
+				3F54F5491B15DA83000A48E1 /* InfinityView.swift */,
 			);
 			path = Thing3;
 			sourceTree = "<group>";
@@ -194,6 +200,7 @@
 			files = (
 				3F12C4891B05E87000B01915 /* Main.storyboard in Resources */,
 				3F12C48E1B05E87000B01915 /* LaunchScreen.xib in Resources */,
+				3F54F5481B15D910000A48E1 /* InfinityView.xib in Resources */,
 				3F12C48B1B05E87000B01915 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F54F54A1B15DA83000A48E1 /* InfinityView.swift in Sources */,
 				3F12C4861B05E87000B01915 /* ViewController.swift in Sources */,
 				3F12C4841B05E87000B01915 /* AppDelegate.swift in Sources */,
 			);
@@ -409,6 +417,7 @@
 				3F12C49F1B05E87000B01915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3F12C4A01B05E87000B01915 /* Build configuration list for PBXNativeTarget "Thing3Tests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +426,7 @@
 				3F12C4A21B05E87000B01915 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
